@@ -1,24 +1,5 @@
-# README
+This is a simple Rails API for managing contacts using a PostgreSQL database. The API provides CRUD (Create, Read, Update, Delete) operations for a contacts table, which consists of the following columns:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+name (string) - The name of the contact
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+phone_number (string) - The phone number of the contact
