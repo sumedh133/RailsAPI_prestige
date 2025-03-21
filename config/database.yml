@@ -3,17 +3,20 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: postgres  # Replace with your PostgreSQL username
-  password: ssb13032004 # Replace with your PostgreSQL password
-  host: localhost
 
 development:
   <<: *default
   database: RailsAPIDatabase
+  username: postgres  # Keep this for local dev
+  password: ssb13032004
+  host: localhost
 
 test:
   <<: *default
   database: RailsAPIDatabase_test
+  username: postgres
+  password: ssb13032004
+  host: localhost
 
 production:
   <<: *default
