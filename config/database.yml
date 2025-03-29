@@ -81,6 +81,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   primary: &primary_production
     <<: *default
     database: prestige_api_production
